@@ -1,0 +1,35 @@
+.play-movies {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+    .contains-play-movies {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 1200px;
+        padding: 5em 0;
+        margin: 0 auto;
+    }
+
+        .contains-play-movies button {
+            outline: none;
+            border: none;
+            background: transparent;
+            padding: 1em 3em;
+            margin: 3em 1em 0 0;
+            font-size: .8rem;
+            color: var(--naranja);
+            border: 1px solid var(--naranja);
+            cursor: pointer;
+        }
+
+            .contains-play-movies button:hover {
+                color: var(--negro);
+                background: var(--naranja);
+                transition: .3s
+            }

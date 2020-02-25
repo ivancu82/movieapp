@@ -1,0 +1,10 @@
+<div class="contiene-pelicula">
+  <img src="{{movie.poster_path | pathApiWeb}}" alt="{{ movie.title }}">
+  <div class="detalles">
+    <h2>{{ movie.title }}</h2>
+    <p class="puntuacion">Puntuación: {{ movie.vote_average }} &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  {{ movie.release_date }}</p>
+    <p class="sinopsis">{{ movie.overview }}</p>
+    <button (click)="iraVideoPeli(movie.id)">Reproducir</button>
+    <button (click)="volverPelis()">Volver</button>
+  </div>
+</div>

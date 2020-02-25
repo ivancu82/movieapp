@@ -1,0 +1,50 @@
+.contiene-pelicula {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    padding: 2em 0;
+    margin: 0 auto;
+}
+
+    .detalles {
+        padding: 0 0 0 2em;
+    }
+
+        .detalles h2 {
+            font-size: 2rem;
+            color: var(--naranja);
+        }
+
+        .detalles .puntuacion {
+            margin: 1em 0 1em 0;
+            font-style: italic;
+            color: var(--verde);
+        }
+
+        .detalles .sinopsis {
+            line-height: 1.6rem;
+            font-weight: 200;
+            color: var(--gris);
+        }
+
+        .detalles button {
+            outline: none;
+            border: none;
+            background: transparent;
+            padding: 1em 3em;
+            margin: 3em 1em 0 0;
+            font-size: .8rem;
+            color: var(--naranja);
+            border: 1px solid var(--naranja);
+            cursor: pointer;
+        }
+
+            .detalles button:hover {
+                color: var(--negro);
+                background: var(--naranja);
+                transition: .3s
+            }
+

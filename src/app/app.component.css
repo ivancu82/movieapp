@@ -1,0 +1,45 @@
+.header {
+    background: var(--negro);
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+.bloque-cabecera { 
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0
+}
+
+    .bloque-cabecera h1 {
+        color: var(--naranja)
+    }
+
+.ul-pelis {
+    list-style: none;
+}
+
+    .ul-pelis li {
+        display: inline-block;
+        padding: 0 1em 0 0
+    }
+
+        .ul-pelis li a {
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--gris);
+        }
+
+            .ul-pelis li a:hover {
+                color: var(--naranja)
+            }
+
+            .ul-pelis li .active {
+                color: var(--naranja)
+            }

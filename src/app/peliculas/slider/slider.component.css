@@ -1,0 +1,89 @@
+.listado {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+    .listado li {
+        display: flex; 
+        flex-flow: column wrap;
+        width: 300px;
+        margin: 0 0 2em 0;
+        border: 1px solid var(--gris);
+        overflow: hidden;
+    }
+
+    .listado li h3 {
+        font-size: 1rem;
+        margin: 20px 20px 10px 20px;
+    }
+
+    .listado li p {
+        font-size: .8rem;
+        text-align: justify;
+        margin: 0 20px 20px 20px;
+    }
+
+        button {
+            outline: none;
+            border: none;
+            width: 150px;
+            padding: 1em;
+            margin: 0 20px 20px 20px;
+            color: var(--gris);
+            text-align: center;
+            font-size: .8rem;
+            background: var(--negro);
+            cursor: pointer;
+        }
+
+            button:hover {
+                background: var(--naranja-hover);
+                transition: .3s;
+            }
+
+            .bloque-pelicula {
+                position: relative;
+            }
+
+                .overlay-pelicula {
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(26, 26, 26, .4);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 10;
+                }
+
+                    .overlay-pelicula:hover {
+                        background: rgba(26, 26, 26, .9);
+                        transition: .3s;
+                    }
+
+                    .bloque-pelicula img {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                    
+                    .bloque-pelicula h3 {
+                        font-size: 1.2rem;
+                        position: absolute;
+                        color: var(--blanco);
+                        bottom: 20px;
+                        right: 40px;
+                        left: 40px;
+                        z-index: 11;
+                        cursor: pointer;
+                        transition: .3s
+                    }
+                    
+                    .bloque-pelicula h3:hover + div{
+                        background: rgba(26, 26, 26, .9)
+                    }
+.carousel {
+    z-index: 1;
+}

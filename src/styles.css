@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --blanco: #ffffff;
+    --gris: #d9d9d9;
+    --naranja: #e88a1a;
+    --naranja-hover: #df7f0b;
+    --rojo: #cf3030;
+    --negro: #1a1a1a;
+    --verde: #15cda8
+}
+
+body {
+    background: var(--negro)
+}
+

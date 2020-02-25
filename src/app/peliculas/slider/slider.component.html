@@ -1,0 +1,9 @@
+<ngx-slick class="carousel" slickModal="slick-modal" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let pelicula of movies" class="slide">
+        <div class="bloque-pelicula">
+          <img [src]="pelicula.backdrop_path | pathApiWeb" alt="" width="100%">
+          <h3 (click)="iraPeli(pelicula.id)">{{ pelicula.title | slice:0:20 }}{{ pelicula.name | slice:0:20 }}</h3>
+          <div class="overlay-pelicula"></div>
+        </div>
+    </div>
+</ngx-slick>
